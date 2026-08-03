@@ -125,6 +125,50 @@ This project demonstrates practical usage of:
 
 ---
 
+# 📊 Data Visualizations
+
+The SQL query results were imported into Python using pandas and visualized with Matplotlib. All figures are generated directly from the Northwind SQLite database.
+
+## Top 10 Customers by Revenue
+
+B's Beverages is the highest-revenue customer in the dataset. However, total revenue is relatively distributed across the leading customers rather than being heavily concentrated in a single account.
+
+![Top 10 Customers by Revenue](images/top_customers_by_revenue.png)
+
+---
+
+## Top 10 Products by Revenue
+
+This ranking identifies the products making the largest contribution to total net revenue after discounts.
+
+![Top 10 Products by Revenue](images/top_products_by_revenue.png)
+
+---
+
+## Revenue by Product Category
+
+Beverages is the highest-revenue category, representing approximately 20.55% of total company revenue. The distribution remains relatively balanced across the main categories.
+
+![Revenue by Product Category](images/revenue_by_category.png)
+
+---
+
+## Monthly Revenue Trend
+
+Monthly revenue remains relatively stable over most of the available sales history, with recurring fluctuations and several high-revenue periods. The first and final years contain partial data and should therefore be interpreted carefully.
+
+![Monthly Revenue Trend](images/monthly_revenue_trend.png)
+
+---
+
+## Average Revenue by Calendar Month
+
+December records the highest average monthly revenue, while February shows the lowest. The results suggest a moderate seasonal pattern, with stronger sales toward the end of the year.
+
+![Average Revenue by Calendar Month](images/average_revenue_by_month.png)
+
+---
+
 # 💼 Skills Demonstrated
 
 - SQL
