@@ -1,45 +1,90 @@
 # 📊 SQL Business Analysis with Northwind Database
 
-## Project 03 – Business Intelligence Portfolio
+## Project 03 – Data Analytics & Business Intelligence Portfolio
 
-![SQL](https://img.shields.io/badge/SQL-Advanced-blue) ![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite&logoColor=white) ![Northwind](https://img.shields.io/badge/Dataset-Northwind-red) ![Business Intelligence](https://img.shields.io/badge/Business-Intelligence-purple) ![Status](https://img.shields.io/badge/Status-Completed-success) ![Portfolio](https://img.shields.io/badge/Portfolio-Project-orange)
-
-Business-oriented SQL analysis using the Northwind database to answer real-world business questions through data exploration, KPI calculation, and actionable insights.
+![SQL](https://img.shields.io/badge/SQL-Advanced-blue)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white)
+![Business Intelligence](https://img.shields.io/badge/Business-Intelligence-purple)
+![Data Analysis](https://img.shields.io/badge/Data-Analysis-008CC1)
+![Northwind](https://img.shields.io/badge/Dataset-Northwind-red)
+![Python](https://img.shields.io/badge/Python-Visualization-3776AB?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 ---
 
-# 🎯 Project Overview
+## 📌 Project Overview
 
-This project explores the Northwind database from a business perspective.
+This project presents a **business-oriented SQL analysis** of the Northwind database, designed to transform transactional data into meaningful business insights.
 
-Instead of solving isolated SQL exercises, the analysis focuses on answering practical business questions such as:
+Rather than treating SQL as a collection of isolated exercises, the project is structured around practical analytical questions related to:
+
+- Customer performance
+- Product performance
+- Product categories
+- Revenue contribution
+- Sales trends
+- Seasonality
+- Business KPIs
+
+Each analytical workflow follows a business-oriented structure:
+
+**Business Question → SQL Query → Finding → Interpretation → Business Value**
+
+The objective is to demonstrate how SQL can be used as an analytical tool to support **data-driven business decision-making**.
+
+---
+
+## 🎯 Business Questions
+
+The analysis was designed to answer questions such as:
 
 - Which customers generate the highest revenue?
 - Which products generate the highest revenue?
 - Which products sell the largest number of units?
 - Which product categories contribute the most to total revenue?
-- How do sales evolve over time?
-- Are there seasonal sales patterns?
-
-Each SQL analysis includes:
-
-- Business Question
-- SQL Solution
-- Finding
-- Interpretation
-- Business Value
-
-The goal is to simulate the daily work of a Business Intelligence Analyst by transforming transactional data into actionable insights.
+- How concentrated is revenue across customers and products?
+- How does revenue evolve over time?
+- Which months generate the strongest sales performance?
+- Are there recurring seasonal patterns in the business?
+- How can transactional data be transformed into actionable business insights?
 
 ---
 
-# 🗄 Dataset
+## 🛠 Technologies & Skills
 
-**Database used:** Northwind
+- SQL
+- SQLite
+- Python
+- Pandas
+- Matplotlib
+- Jupyter Notebook
+- Data Analysis
+- Business Intelligence
+- Data Aggregation
+- Table Joins
+- Common Table Expressions (CTEs)
+- Window Functions
+- CASE Expressions
+- Date Functions
+- NULL Handling
+- KPI Analysis
+- Revenue Analytics
+- Time-Series Analysis
+- Percentage Calculations
+- Business Reporting
+- Data Visualization
+- Analytical Storytelling
 
-Northwind is Microsoft's classic sample database that simulates the operations of an international trading company.
+---
 
-The database contains information about:
+## 🗄️ Dataset
+
+**Database:** Northwind
+
+Northwind is Microsoft's classic sample database representing the operations of an international trading company.
+
+The database includes information about:
 
 - Customers
 - Orders
@@ -50,9 +95,176 @@ The database contains information about:
 - Suppliers
 - Shippers
 
+These relational tables make it possible to analyze the company from multiple business perspectives using SQL joins, aggregations, and analytical calculations.
+
 ---
 
-# 📂 Project Structure
+## 📈 Business Analysis
+
+### 👥 Customer Analysis
+
+The customer analysis identifies the accounts generating the greatest contribution to company revenue.
+
+Key questions include:
+
+- Which customers generate the highest revenue?
+- How concentrated is revenue among the largest customers?
+- Does the company depend heavily on a small number of accounts?
+
+The analysis shows that **B's Beverages is the highest-revenue customer**, while revenue among the leading customers remains relatively distributed rather than being dominated by a single account.
+
+![Top 10 Customers by Revenue](images/top_customers_by_revenue.png)
+
+---
+
+### 📦 Product Analysis
+
+Product-level analysis evaluates which products generate the greatest commercial impact.
+
+The analysis includes:
+
+- Revenue by product
+- Units sold
+- Product rankings
+- Contribution to company sales
+
+The ranking highlights the products responsible for the largest contribution to total net revenue after discounts.
+
+![Top 10 Products by Revenue](images/top_products_by_revenue.png)
+
+---
+
+### 🗂️ Category Analysis
+
+Product categories were analyzed from several perspectives:
+
+- Total revenue
+- Sales volume
+- Product portfolio size
+- Revenue contribution
+- Average revenue per product
+
+**Beverages is the highest-revenue category**, representing approximately **20.55% of total company revenue**.
+
+Despite its leading position, revenue remains relatively balanced across the main product categories.
+
+![Revenue by Product Category](images/revenue_by_category.png)
+
+---
+
+### 📅 Sales Trend Analysis
+
+Time-based analysis was performed to understand how company revenue evolves throughout the available sales history.
+
+The analysis includes:
+
+- Annual revenue
+- Monthly revenue
+- Quarterly performance
+- Peak revenue periods
+- Average revenue by calendar month
+- Seasonal patterns
+
+Monthly revenue remains relatively stable across much of the available history, although several periods show stronger sales performance.
+
+The first and final years contain partial data and should therefore be interpreted carefully when making year-over-year comparisons.
+
+![Monthly Revenue Trend](images/monthly_revenue_trend.png)
+
+---
+
+### 🗓️ Seasonal Analysis
+
+Average revenue was calculated by calendar month to identify recurring seasonal patterns.
+
+**December records the highest average monthly revenue**, while **February records the lowest**.
+
+This suggests a moderate seasonal pattern, with stronger commercial performance toward the end of the year.
+
+![Average Revenue by Calendar Month](images/average_revenue_by_month.png)
+
+---
+
+## 🧠 SQL Concepts Applied
+
+The project demonstrates practical use of SQL concepts commonly required in Data Analytics and Business Intelligence roles.
+
+### Data Retrieval & Filtering
+
+- SELECT statements
+- WHERE conditions
+- ORDER BY
+- Filtering and sorting
+
+### Data Aggregation
+
+- SUM
+- AVG
+- COUNT
+- GROUP BY
+- Percentage calculations
+- Business KPI calculations
+
+### Relational Analysis
+
+- INNER JOIN
+- LEFT JOIN
+- Multi-table queries
+
+### Advanced SQL
+
+- Common Table Expressions (CTEs)
+- Window Functions
+- CASE expressions
+- Date functions
+- NULL handling
+- Ranking calculations
+- Multi-level aggregations
+
+### Business Analytics
+
+- Revenue analysis
+- Customer ranking
+- Product ranking
+- Category contribution
+- Time-series analysis
+- Seasonal analysis
+- KPI reporting
+
+---
+
+## 📊 Data Visualization
+
+SQL query results were imported into **Python using Pandas** and visualized with **Matplotlib**.
+
+This creates a workflow combining:
+
+**Relational Database → SQL Analysis → Python → Visualization → Business Insight**
+
+The visualizations allow query results to be communicated more effectively to non-technical stakeholders and provide additional context for business interpretation.
+
+---
+
+## 💡 Key Business Insights
+
+The analysis reveals several important patterns in the Northwind business:
+
+- Revenue is distributed across multiple major customers rather than being overwhelmingly dependent on a single account.
+- B's Beverages represents the highest-revenue customer in the analyzed dataset.
+- Product revenue is concentrated among a group of leading products.
+- Beverages is the strongest product category, contributing approximately **20.55% of total revenue**.
+- Revenue distribution across major categories remains relatively diversified.
+- Monthly revenue shows recurring fluctuations rather than a constant linear trend.
+- December produces the highest average revenue among calendar months.
+- February records the lowest average monthly revenue.
+- The data suggests moderate seasonality, with stronger performance toward the end of the year.
+- Partial years should not be compared directly with complete years without controlling for the available observation period.
+
+These findings demonstrate how SQL analysis can move beyond data extraction and support **commercial performance evaluation and business decision-making**.
+
+---
+
+## 📂 Project Structure
 
 ```text
 Project_03_SQL_Business_Analysis/
@@ -70,125 +282,16 @@ Project_03_SQL_Business_Analysis/
 ├── notebooks/
 ├── images/
 ├── README.md
+├── projects_notes.md
 ├── requirements.txt
 └── .gitignore
 ```
 
 ---
 
-# 📈 Business Questions Answered
+## 🚀 How to Use
 
-## Customer Analysis
-
-- Top revenue-generating customers
-
-## Product Analysis
-
-- Highest revenue products
-- Best-selling products
-
-## Category Analysis
-
-- Highest revenue categories
-- Highest sales volume
-- Largest product portfolio
-- Revenue contribution by category
-- Average revenue per product
-
-## Sales Trend Analysis
-
-- Annual revenue analysis
-- Monthly revenue analysis
-- Peak revenue months
-- Average monthly revenue
-- Quarterly performance
-
----
-
-# 🛠 SQL Concepts Covered
-
-This project demonstrates practical usage of:
-
-- Filtering and sorting
-- Aggregate functions
-- Table joins
-- Common Table Expressions (CTEs)
-- Window Functions
-- Date functions
-- CASE expressions
-- NULL handling
-- Business KPI calculations
-- Revenue analysis
-- Time-series analysis
-- Percentage calculations
-- Multi-level aggregations
-
----
-
-# 📊 Data Visualizations
-
-The SQL query results were imported into Python using pandas and visualized with Matplotlib. All figures are generated directly from the Northwind SQLite database.
-
-## Top 10 Customers by Revenue
-
-B's Beverages is the highest-revenue customer in the dataset. However, total revenue is relatively distributed across the leading customers rather than being heavily concentrated in a single account.
-
-![Top 10 Customers by Revenue](images/top_customers_by_revenue.png)
-
----
-
-## Top 10 Products by Revenue
-
-This ranking identifies the products making the largest contribution to total net revenue after discounts.
-
-![Top 10 Products by Revenue](images/top_products_by_revenue.png)
-
----
-
-## Revenue by Product Category
-
-Beverages is the highest-revenue category, representing approximately 20.55% of total company revenue. The distribution remains relatively balanced across the main categories.
-
-![Revenue by Product Category](images/revenue_by_category.png)
-
----
-
-## Monthly Revenue Trend
-
-Monthly revenue remains relatively stable over most of the available sales history, with recurring fluctuations and several high-revenue periods. The first and final years contain partial data and should therefore be interpreted carefully.
-
-![Monthly Revenue Trend](images/monthly_revenue_trend.png)
-
----
-
-## Average Revenue by Calendar Month
-
-December records the highest average monthly revenue, while February shows the lowest. The results suggest a moderate seasonal pattern, with stronger sales toward the end of the year.
-
-![Average Revenue by Calendar Month](images/average_revenue_by_month.png)
-
----
-
-# 💼 Skills Demonstrated
-
-- SQL
-- SQLite
-- Business Intelligence
-- Data Analysis
-- KPI Analysis
-- Data Aggregation
-- Window Functions
-- Common Table Expressions (CTEs)
-- Revenue Analytics
-- Time-Series Analysis
-- Business Reporting
-- Analytical Thinking
-
----
-
-# 🚀 How to Use
-
-1. Clone this repository.
+1. Clone the repository.
 2. Open the project in Visual Studio Code.
 3. Open the Northwind SQLite database.
 4. Execute the SQL scripts located in:
@@ -197,25 +300,53 @@ December records the highest average monthly revenue, while February shows the l
 queries/02_business_questions/
 ```
 
-Each file contains:
+The business-oriented SQL files are structured around:
 
-- Business question
-- SQL solution
-- Business insight
+- Business Question
+- SQL Solution
+- Finding
 - Interpretation
-- Business value
+- Business Value
+
+The visualization notebook can then be used to transform SQL outputs into charts for analytical reporting.
 
 ---
 
-# 👨‍💻 Author
+## 🚀 Project Outcome
+
+This project demonstrates the development of a complete **SQL-based business analysis workflow**, from relational database exploration and query development to KPI analysis, visualization, interpretation, and business reporting.
+
+The project demonstrates practical skills in:
+
+- SQL querying
+- Relational database analysis
+- Multi-table joins
+- Data aggregation
+- CTEs
+- Window functions
+- KPI calculations
+- Customer analysis
+- Product analysis
+- Revenue analysis
+- Time-series analysis
+- Seasonal analysis
+- Python-based visualization
+- Business insight generation
+- Analytical storytelling
+
+Most importantly, the project demonstrates the ability to use **SQL to answer real business questions rather than simply retrieve data**.
+
+As **Project 03** of the portfolio, it expands the analytical foundation developed in Projects 01 and 02 by introducing a stronger focus on **relational databases, SQL analytics, and Business Intelligence**.
+
+---
+
+## 👨‍💻 Author
 
 **Martin Panelo**
 
-Geophysicist transitioning into Data Analytics and Business Intelligence, with experience applying analytical thinking to solve real-world business problems through SQL and data-driven insights.
+**Data Analyst | Geophysicist | Scientific Computing**
 
-- **GitHub:** https://github.com/PaneloMartin
-- **LinkedIn:** https://www.linkedin.com/in/martinpanelo/
+Analytical professional combining data analytics, scientific computing, and geoscience experience, with a focus on Python, SQL, Power BI, data visualization, and business-oriented problem solving.
 
----
-
-⭐ If you found this project interesting, feel free to explore the rest of my portfolio.
+- GitHub: [PaneloMartin](https://github.com/PaneloMartin)
+- LinkedIn: [Martin Panelo](https://www.linkedin.com/in/martinpanelo/)
